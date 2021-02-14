@@ -4,6 +4,7 @@
 ## Getting Started
 ### Preresiquite
 - Ruby 2.6.3
+- rspec 3.9
 
 ### Running the test
 run all spec (go to each folder)
