@@ -1,8 +1,5 @@
-class Bird
+class Animal
   def sound
     raise NotImplementedError
-  end
-  def fly
-    "I will fly!"
   end
 end

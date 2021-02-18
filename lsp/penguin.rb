@@ -1,10 +1,7 @@
-require_relative 'bird'
+require_relative 'walking_bird'
 
-class Penguin < Bird
+class Penguin < WalkingBird
   def sound
     "i'm a penguin"
-  end
-  def fly
-    raise "I can't fly"
   end
 end

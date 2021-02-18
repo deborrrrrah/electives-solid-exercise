@@ -1,10 +1,7 @@
-require_relative 'bird'
+require_relative 'walking_bird'
 
-class Ostrich < Bird
+class Ostrich < WalkingBird
   def sound
     "bark"
-  end
-  def fly
-    raise "I can't fly"
   end
 end

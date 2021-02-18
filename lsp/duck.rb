@@ -1,6 +1,6 @@
-require_relative 'bird'
+require_relative 'flying_bird'
 
-class Duck < Bird
+class Duck < FlyingBird
   def sound
     "quack"
   end
