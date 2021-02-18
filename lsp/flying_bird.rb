@@ -1,6 +1,6 @@
-require_relative 'animal'
+require_relative 'bird'
 
-class FlyingBird < Animal
+class FlyingBird < Bird
   def fly
     "I will fly!"
   end

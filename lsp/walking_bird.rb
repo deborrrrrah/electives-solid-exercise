@@ -1,6 +1,6 @@
-require_relative 'animal'
+require_relative 'bird'
 
-class WalkingBird < Animal
+class WalkingBird < Bird
   def fly
     raise "I can't fly"
   end
