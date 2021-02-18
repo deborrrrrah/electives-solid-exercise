@@ -3,6 +3,6 @@ class Reader
 		raise NotImplementedError
 	end
 	def read(input)
-		raise NotImplementedError
+		"#{name} read #{input}"
 	end
 end
