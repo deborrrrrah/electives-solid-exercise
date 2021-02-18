@@ -12,4 +12,28 @@ describe Copier do
 
   expect(copier.copy("SOLID Principles", scanner, printer)).to eq("printer prints 'SOLID Principles' from scanner")
  end
+
+ it "can copy input from keyboard to printer" do
+  copier = Copier.new
+  keyboard = KeyboardReader.new
+  printer = Printer.new
+
+  expect(copier.copy("SOLID Principles", keyboard, printer)).to eq("printer prints 'SOLID Principles' from keyboard")
+ end
+
+ it "can copy input from scanner to network_printer" do
+  copier = Copier.new
+  scanner = Scanner.new
+  network_printer = NetworkPrinter.new
+
+  expect(copier.copy("SOLID Principles", scanner, network_printer)).to eq("network_printer prints 'SOLID Principles' from scanner")
+ end
+
+ it "can copy input from keyboard to printer" do
+  copier = Copier.new
+  keyboard = KeyboardReader.new
+  network_printer = NetworkPrinter.new
+
+  expect(copier.copy("SOLID Principles", keyboard, network_printer)).to eq("network_printer prints 'SOLID Principles' from keyboard")
+ end
 end
