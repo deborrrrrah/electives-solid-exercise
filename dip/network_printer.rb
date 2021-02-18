@@ -1,5 +1,7 @@
-class NetworkPrinter
-	def write(input, reader_name)
-		"network_printer prints '#{input}' from #{reader_name}"
-	end
+require_relative 'writer'
+
+class NetworkPrinter < Writer
+  def name
+    'network_printer' 
+  end
 end
