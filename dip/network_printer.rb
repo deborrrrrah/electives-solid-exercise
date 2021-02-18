@@ -2,6 +2,6 @@ require_relative 'writer'
 
 class NetworkPrinter < Writer
   def name
-    'network_printer' 
+    'network printer' 
   end
 end
